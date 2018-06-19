@@ -1,0 +1,14 @@
+// Factorial program 
+declare 
+ i integer;
+ f integer;
+ n integer;
+begin
+f:=1;
+n:=5;
+for i in 1..n loop
+f := f*i;
+end loop;
+dbms_output.put_line('Factorial is ' || f);
+end;
+/

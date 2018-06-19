@@ -1,0 +1,24 @@
+// 
+declare 
+num integer := 17;
+i integer;
+flag integer := 0;
+n integer;
+begin
+if num <= 1 then
+dbms_output.put_line('The given number is not a prime number');
+end if;
+n := num/2;
+for i in 2..n loop
+if mod(num ,i) = 0 then
+flag := 1;
+exit;
+end if;
+end loop;
+if flag = 1 then
+dbms_output.put_line('The given number is not prime number');
+else
+dbms_output.put_line('The given number is a prime number');
+end if;
+end;
+/

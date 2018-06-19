@@ -1,0 +1,22 @@
+
+//Fibonacci Series
+declare
+num integer := 10;
+i integer;
+f1 integer:= 0;
+f2 integer :=1;
+f3 integer;
+begin
+for i in 0..num loop
+if i <= 1 then
+f3 := i;
+else
+f3 := f1+f2;
+f1 := f2;
+f2 := f3;
+dbms_output.put_line(f3);
+end if;
+end loop;
+end;
+/
+

@@ -1,0 +1,20 @@
+//
+declare
+num1 integer := 143;
+n integer;
+digit integer;
+sum integer;
+begin
+n := num1 ;
+while n >0 loop
+digit := mod(n,10);
+sum := sum+(digit*digit*digit);
+n = trunc(n/10);
+end loop;
+if sum = num1 then
+dbms_output.put.line('The given number is Armstrong');
+else
+dbms_output.put.line('The given number is not an Armstrong');
+end if;
+end;
+/

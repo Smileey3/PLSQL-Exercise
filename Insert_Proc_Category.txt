@@ -1,0 +1,31 @@
+create or replace procedure catergoryinsert (CAT_ID IN NUMBER,CATEGORY_NAME IN VARCHAR2,PROD_ID NUMBER)
+IS 
+BEGIN
+INSERT INTO CATEGORY VALUES (CAT_ID,CATEGORY_NAME,PROD_ID);
+END;
+/
+
+BEGIN
+catergoryinsert(010,'Shirt',1);
+END;
+/
+BEGIN
+catergoryinsert(011,'Kurtis',2);
+END;
+/
+BEGIN
+catergoryinsert(012,'Watches',3);
+END;
+/
+BEGIN
+catergoryinsert(013,'Jeans',4);
+END;
+/
+BEGIN
+catergoryinsert(014,'Shoes',5);
+END;
+/
+BEGIN
+catergoryinsert(015,'Sarees',6);
+END;
+/

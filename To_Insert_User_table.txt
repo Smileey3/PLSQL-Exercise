@@ -1,0 +1,38 @@
+create or replace procedure usertableinsert (USR_ID IN NUMBER,NAME IN VARCHAR2,ADDRESS IN VARCHAR2,PHONE_NO IN NUMBER,EMAIL_ID IN VARCHAR2,PASSWORD IN VARCHAR2)
+is 
+begin 
+insert into user_table values (USR_ID,NAME,ADDRESS,PHONE_NO,EMAIL_ID,PASSWORD);
+end;
+/
+
+begin 
+usertableinsert(001,'Sathya','Salem',12345,'smileey03@gmail.com','S12345');
+end;
+/
+
+begin 
+usertableinsert(002,'Priya','Coimbatore',123435,'sathya03@gmail.com','S345');
+end;
+/
+
+begin 
+usertableinsert(0013,'Sita','UP',1234235,'sita03@gmail.com','S1234de5');
+end;
+/
+
+begin 
+usertableinsert(0023,'Ram','Kerala',87452106,'ram03@gmail.com','24875ki');
+end;
+/
+
+begin 
+usertableinsert(0234,'Joe','Delhi',8745342106,'joe12303@gmail.com','24de875ki');
+end;
+/
+
+begin 
+usertableinsert(1234,'Shu','Rajasthan',5847693210,'sduu12303@gmail.com','754imhjk');
+end;
+/
+
+select * from user_table
